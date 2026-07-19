@@ -4,6 +4,7 @@
   --primary-color: #0B3C5D;
   --secondary-color: #328CC1;
   --accent: #D9B310;
+  --fire: #D11921;
 }
 
 * {
@@ -18,14 +19,12 @@ html {
 }
 
 body {
-  /* background-color: var(--secondary-color); */
   line-height: 1.6;
   height: 1000px;
 }
 
 header {
-  /* border: 1px solid red; */
-  padding: 1em 0;
+  padding: 1rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -38,6 +37,7 @@ h3 {
   font-family: Merriweather, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* div named container */
 .container {
   /* border: 2px solid red; */
   width: 90%;
@@ -45,12 +45,13 @@ h3 {
   max-width: 1200px;
 }
 
+/* div inside header */
 header .container {
   background-color: rgb(245, 247, 250, 0.3);
   /* background-color: rgba(99, 99, 199, 0.3); */
   backdrop-filter: blur(10px);
-  padding: 0.7em 0;
-  border-radius: 3em;
+  padding: 0.7rem 0;
+  border-radius: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,20 +64,17 @@ header ul {
 
 header ul a {
   text-decoration: none;
-  padding: 8px 16px;
   margin-right: 30px;
-  background-color: var(--secondary-color);
-  color: var(--base-color);
+  color: var(--primary-color);
   border-radius: 6px;
-  transition: background-color 0.3s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 header ul a:hover {
-  background-color: var(--primary-color);
+  color: var(--base-color)
 }
 
 main .hero {
-  /* border: 2px solid yellow; */
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -84,39 +82,42 @@ main .hero {
   align-items: center;
   justify-content: space-evenly;
   gap: 140px;
-  padding: 40px 80px;
+  padding: 60px 80px;
   background-image: linear-gradient(260deg, var(--secondary-color), var(--base-color));
   border-top-right-radius: 40px;
   margin-top: 160px;
 }
 
 main .hero-content {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
+main .hero-letter {
+  font-size: 2.8rem;
+  color: var(--fire);
+}
+
 .hero-content p {
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 main img {
   border-radius: 20px;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
   width: 400px;
 }
 
 main .hero-buttons {
-  /* border: 1px solid yellow; */
   margin-top: 40px;
   display: flex;
   gap: 12px;
 }
 
+/* primary button hero section */
 main .btn {
-  /* border: 1px solid red; */
-  padding: 0.8em 1.4em;
+  padding: 0.8rem 1.4rem;
   background-color: var(--primary-color);
   color: var(--base-color);
   text-decoration: none;
@@ -129,9 +130,10 @@ main .btn:hover {
   color: var(--text-color);
 }
 
+/* secondary button hero section */
 main .btn-secondary {
   border: 1px solid var(--primary-color);
-  padding: 0.7em 1.4rem;
+  padding: 0.7rem 1.4rem;
   color: var(--text-color);
   text-decoration: none;
   border-radius: 6px;
@@ -141,4 +143,77 @@ main .btn-secondary {
 main .btn-secondary:hover {
   background-color: var(--primary-color);
   color: var(--base-color)
+}
+
+main .categories {
+  /* border: 2px solid red; */
+  width: 90%;
+  margin: 80px auto;
+  max-width: 1200px;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+main .category-grid {
+  /* border: 2px solid green; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.card {
+  /* border: 2px solid orange; */
+  padding: 2.2rem 2rem 3rem 2rem;
+  border-top-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background-image: linear-gradient(180deg, var(--secondary-color), var(--base-color));
+}
+
+.card .img-container {
+  width: 220px;
+  height: 200px;
+  background-image: url(/images/earthquake01.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.card:nth-child(2) .img-container {
+  background-image: url(/images/flood.jpg);
+}
+
+.card:nth-child(3) .img-container {
+  background-image: url(/images/fire.jpg  );
+}
+
+.card:nth-child(4) .img-container {
+  background-image: url(/images/first_aid.jpg  );
+}
+
+.card p {
+  margin-bottom: 1.2rem;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card img {
+  width: 300px;
+
+}
+
+.card h3 {
+  font-size: 1.4rem;
 }
