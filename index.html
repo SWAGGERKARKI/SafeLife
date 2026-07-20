@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SafeLife Japan</title>
 
   <link rel="stylesheet" href="./styles/style.css">
@@ -24,15 +24,17 @@
       <nav class="nav-title">
         <ul>
           <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/about.html">About</a></li>
-          <li><a href="./pages/earthquake.html">Earthquake</a></li>
-          <li><a href="./pages/flood.html">Flood</a></li>
-          <li><a href="./pages/emergency-kit.html">Emergency Kit</a></li>
-          <li><a href="./pages/first-aid.html">First Aid</a></li>
-          <li><a href="./pages/contact.html">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#earthquake">Earthquake</a></li>
+          <!-- <li><a href="#flood">Flood</a></li> -->
+          <li><a href="#emergency">Emergency</a></li>
+          <!-- <li><a href="./pages/first-aid.html">First Aid</a></li> -->
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
       </nav>
+
+      <div class="hamburger-menu">dfd</div>
     </div>
   </header>
 
@@ -97,7 +99,7 @@
         <article class="card">
           <div class="img-container"></div>
           <h3>First Aid</h3>
-          <p>Basic first aid knowledge that everyone should know.</p>
+          <p>Basic first aid knowledge that everyone should aware of.</p>
           <a href="/pages/first-aid.html" class="btn">Read More</a>
         </article>
       </div>
@@ -106,7 +108,7 @@
     <section class="tips">
       <h2>Essential Safety Tips</h2>
 
-      <article class="hero tip">
+      <article id="earthquake" class="hero tip">
 
         <img src="/images/earthquake_guide.png" alt="earthquake_guide">
 
@@ -126,7 +128,7 @@
       </article>
     </section>
 
-    <section class="hotline-checklist">
+    <section id="emergency" class="hotline-checklist">
       <div class="emer-hotline">
         <h2>Emergency Hotlines</h2>
         <p>
@@ -198,20 +200,150 @@
         </table>
       </div>
     </section>
+
+    <section class="news">
+      <h2>Latest awareness news</h2>
+
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="img-container"></div>
+          <h3>Earthquake Preparedness</h3>
+          <p>
+            Learn simple actions that can save lives before and during earthquake.
+          </p>
+          <a class="btn" href="https://www3.nhk.or.jp/nhkworld/en/news/weather-disaster/earthquake/"
+            target="_blank">Read Article</a>
+        </article>
+
+        <article class="news-card">
+          <div class="img-container" alt="typhoon-safety"></div>
+          <h3>Typhoon Safety</h3>
+          <p>
+            Protect your home before heavey rain and strong winds arrive.
+          </p>
+          <a class="btn" href="https://newsonjapan.com/article/150005.php" target="_blank">Read Article</a>
+        </article>
+
+        <article class="news-card">
+          <div class="img-container" alt="heatwave"></div>
+          <h3>Heatstroke Prevention</h3>
+          <p>
+            Stay hydrated and recognize early symptoms of heatstroke.
+          </p>
+          <a class="btn" href="https://www3.nhk.or.jp/nhkworld/en/news/weather-disaster/earthquake/"
+            target="_blank">Read Article</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="videos">
+      <h2>Learn through videos</h2>
+      <div class="video-grid">
+        <article class="video-card">
+          <iframe width="320" height="215" src="https://www.youtube.com/embed/BLEPakj1YTY?si=MFFPPSoUkYzMI9mN"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="Earthquake Safety"></iframe>
+          <h3>Earthquake Safety</h3>
+        </article>
+
+        <article class="video-card">
+          <iframe width="320" height="215" src="https://www.youtube.com/embed/43M5mZuzHF8?si=GmCXpP0UXHukMC5g"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h3>Flood Safety</h3>
+        </article>
+
+        <article class="video-card">
+          <iframe width="320" height="215" src="https://www.youtube.com/embed/aK9xrsK7vPg?si=0xNCmfAo8sLNC7XG"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h3>First Aid Safety</h3>
+        </article>
+      </div>
+    </section>
   </main>
 
-  <aside>
-    <p>emergency hotline</p>
-    <p>quick tips</p>
-    <p>advertisement</p>
-    <p>related articles</p>
-  </aside>
-
   <footer>
-    <p>copyright</p>
-    <p>contact</p>
-    <p>social media</p>
-    <p>privacy policy</p>
+    <section class="footer-container">
+      <article class="footer-links">
+        <div class="logo-container">
+          <img src="/images/logo.png" alt="safe-life-logo" width="200px">
+          <div class="text-container">
+            <p>Save Life Japan</p>
+            <p>Disaster Preparedness and Emergency Awareness</p>
+          </div>
+
+        </div>
+
+        <div class="about-container">
+          <h4>About</h4>
+          <p>The main motive is to spread awareness about disaster.</p>
+        </div>
+
+        <div class="links-contact">
+          <div class="quick-links">
+            <h4>Quick Links</h4>
+
+            <div class="links">
+
+              <a href="/index.html">Home</a>
+              <a href="#about">About</a>
+              <a href="#earthquake">Earthquake</a>
+              <a href="#flood">Flood</a>
+              <a href="#emergency">Emergency</a>
+            </div>
+          </div>
+
+          <div id="contact" class="contact">
+            <h4>Contact</h4>
+            <div class="numbers">
+              <img src="/icons/phone-solid.png" alt="phone-icon" width="20px">
+              <p class="phone-icon">110 Police</p>
+              <img src="/icons/fire-solid.png" alt="fire-icon" width="20px">
+              <p class="fire-brigade-icon">119 Fire Department</p>
+              <img src="/icons/envelope-solid.png" alt="mail-icon" width="20px">
+              <p class="mail-icon">info@safelife.jp</p>
+
+            </div>
+          </div>
+
+          <div class="social-links">
+            <h4>Social Media</h4>
+            <div class="links">
+              <div class="facebook-icon"></div>
+              <div class="whatsapp-icon"></div>
+              <div class="insta-icon"></div>
+              <div class="x-icon"></div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div>
+          <h4>Find Us</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52269.86468999608!2d135.7117235087569!3d35.03506845172828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001085a40096db1%3A0x8c895182522ac6d1!2sThe%20Kyoto%20College%20of%20Graduate%20Studies%20for%20Informatics!5e0!3m2!1sen!2sjp!4v1784550035800!5m2!1sen!2sjp"
+            width="220" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </article>
+
+      <article class="feedback">
+        <h3>Please feel free give feedback</h3>
+        <form action="#">
+          <input type="text" placeholder="enter your name" id="name" name="name">
+          <input type="email" placeholder="enter your email" id="email" name="email">
+          <textarea name="message" id="message" placeholder="enter your feedback" cols="60" rows="10"></textarea>
+          <input type="submit">
+        </form>
+      </article>
+    </section>
+    <p>&copy; 2026 SafeLife Japan. All Rights Reserved.</p>
+
   </footer>
 </body>
 
