@@ -23,6 +23,7 @@ body {
   line-height: 1.6;
 }
 
+/* header semantic tag */
 header {
   padding: 1rem 0;
   position: fixed;
@@ -32,20 +33,21 @@ header {
   z-index: 1000;
 }
 
+/* used meeriweather font family for headings 1, 2, 3 */
 h1,
 h2,
 h3 {
   font-family: Merriweather, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* div named container */
+/* div contains header content */
 .container {
-  /* border: 2px solid red; */
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
 }
 
+/* menu for mobile view */
 header .container .hamburger-menu {
   width: 30px;
   height: 30px;
@@ -53,10 +55,9 @@ header .container .hamburger-menu {
   opacity: 0;
 }
 
-/* div inside header */
+/* div inside header contains header content */
 header .container {
   background-color: rgb(245, 247, 250, 0.3);
-  /* background-color: rgba(99, 99, 199, 0.3); */
   backdrop-filter: blur(10px);
   padding: 0.7rem 0;
   border-radius: 3rem;
@@ -65,11 +66,18 @@ header .container {
   justify-content: space-between;
 }
 
+/* logo */
+header .container img {
+  width: 120px;
+}
+
+/* header unordered list */
 header ul {
   list-style-type: none;
   display: flex;
 }
 
+/* header links */
 header ul a {
   text-decoration: none;
   margin-right: 30px;
@@ -78,10 +86,12 @@ header ul a {
   transition: color 0.2s ease-in;
 }
 
+/* hover effect to links */
 header ul a:hover {
   color: var(--fire);
 }
 
+/* hero section */
 main .hero {
   width: 90%;
   max-width: 1200px;
@@ -96,28 +106,32 @@ main .hero {
   margin-top: 160px;
 }
 
+/* hero section content */
 main .hero-content {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
+/* hero section first letter of heading */
 main .hero-letter {
   font-size: 2.8rem;
   color: var(--fire);
 }
 
+/* hero section paragraph */
 .hero-content p {
   font-size: 1.1rem;
 }
 
+/* images used in main section */
 main img {
   border-radius: 20px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
   width: 400px;
 }
 
+/* buttons in hero section */
 main .hero-buttons {
   margin-top: 40px;
   display: flex;
@@ -134,6 +148,7 @@ main .btn {
   transition: all 0.3s ease-in;
 }
 
+/* hover effect of primary button */
 main .btn:hover {
   background-color: var(--secondary-color);
   color: var(--text-color);
@@ -149,22 +164,24 @@ main .btn-secondary {
   transition: all 0.3s ease-in;
 }
 
+/* hover effect of secondary button */
 main .btn-secondary:hover {
   background-color: var(--primary-color);
   color: var(--base-color);
 }
 
+/* categories, tips, hotline & checklist, news and youtube video sections of main */
 main .categories,
 main .tips,
 main .hotline-checklist,
 main .news,
 main .videos {
-  /* border: 2px solid red; */
   width: 90%;
   margin: 80px auto;
   max-width: 1200px;
 }
 
+/* heading 2 of main */
 main h2 {
   text-align: center;
   margin-bottom: 3rem;
@@ -172,6 +189,7 @@ main h2 {
   color: var(--primary-color);
 }
 
+/* grid style of category, news and youtube video */
 main .category-grid,
 main .news-grid,
 main .video-grid {
@@ -181,15 +199,16 @@ main .video-grid {
   gap: 1.2rem;
 }
 
+/* change of style of news and youtube video grid */
 main .news-grid,
 main .video-grid {
   grid-template-columns: repeat(3, 1fr);
 }
 
+/* category, news & youtube video card */
 .card,
 .news-card,
 .video-card {
-  /* border: 2px solid orange; */
   padding: 2.2rem 2rem 3rem 2rem;
   border-top-right-radius: 2rem;
   display: flex;
@@ -201,15 +220,18 @@ main .video-grid {
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* youtube videos */
 main .video-card iframe {
   border-radius: 8px;
 }
 
+/* hover effect on category and news card */
 .card:hover,
 .news-card:hover {
   transform: translateY(-8px);
 }
 
+/* image container div in category and news cards */
 .card .img-container,
 .news-card .img-container {
   width: 220px;
@@ -224,37 +246,38 @@ main .video-card iframe {
   margin: 0 auto;
 }
 
+/* image container of second card element */
 .card:nth-child(2) .img-container {
   background-image: url("/images/flood.jpg");
 }
 
+/* image container of third card element */
 .card:nth-child(3) .img-container {
   background-image: url("/images/fire.jpg");
 }
 
+/* image container of fourth card element */
 .card:nth-child(4) .img-container {
   background-image: url("/images/first_aid.jpg");
 }
 
+/* card links */
 .card a {
   text-decoration: none;
 }
 
+/* card image */
 .card img {
   width: 300px;
 }
 
+/* card and tips heading */
 .card h3,
 .tips h3 {
   font-size: 1.4rem;
 }
 
-/* main .tips {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1200px;
-} */
-
+/* tip container of tips section */
 .tips .tip {
   margin-top: 3rem;
   border-top-right-radius: 0;
@@ -265,33 +288,38 @@ main .video-card iframe {
   width: 100%;
 }
 
+/* tips content */
 .tips .tip-content {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
 
+/* unorder list of tip content */
 .tip-content ul {
   list-style-position: inside;
 }
 
+/* tips section image */
 .tips img {
   height: 400px;
 }
 
+/* hotline and checklist section */
 .hotline-checklist {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
+/* heading 2 of hotline and checklist section */
 .hotline-checklist h2 {
   margin-bottom: 0;
 }
 
+/* emer-hotline & .emer-kit cards in hotline-checklist contaier */
 .hotline-checklist .emer-hotline,
 .hotline-checklist .emer-kit {
-  /* border: 2px solid red; */
   padding: 3rem 2.6rem;
   background-image: linear-gradient(90deg, var(--secondary-color), var(--base-color));
   border-top-left-radius: 40px;
@@ -301,31 +329,31 @@ main .video-card iframe {
 }
 
 .hotline-checklist .emer-hotline table {
-  /* border-collapse: collapse; */
   border-spacing: 0.3rem;
 }
 
-.hotline-checlist .emer-hotline,
+.hotline-checklist .emer-hotline,
 th,
 tr,
 td {
-  /* border: 1px solid; */
   background-color: var(--secondary-color);
   border-radius: 1rem;
   padding: 0.3rem 1rem;
   cursor: pointer;
 }
 
+/* table rows of table in hotline card */
 .hotline-checklist .emer-hotline tbody tr {
   transition: all 0.3s ease-in;
 }
 
+/* hover effect on each row of table */
 .hotline-checklist .emer-hotline tbody tr:hover {
   color: var(--base-color);
 }
 
+/* emergecny kit card od hotline-checklist section */
 .hotline-checklist .emer-kit {
-  /* border: 2px solid green; */
   background-image: linear-gradient(260deg, var(--secondary-color), var(--base-color));
   border-top-left-radius: 0;
   border-top-right-radius: 40px;
@@ -337,6 +365,7 @@ td {
   gap: 10px;
 }
 
+/* svg image icon */
 .water-icon,
 .radio-icon,
 .torch-icon,
@@ -348,6 +377,7 @@ td {
   padding-left: 30px;
 }
 
+/* using before psuedocode for inserting icon */
 .water-icon::before,
 .radio-icon::before,
 .torch-icon::before,
@@ -366,26 +396,32 @@ td {
   background-repeat: no-repeat;
 }
 
+/* radio icon */
 .radio-icon::before {
   background-image: url("/icons/radio-solid-full.svg");
 }
 
+/* torch icon */
 .torch-icon::before {
   background-image: url("/icons/torch-svgrepo-com.svg");
 }
 
+/* first aid icon */
 .aid-icon::before {
   background-image: url("/icons/kit-medical-solid-full.svg");
 }
 
+/* battery icon */
 .battery-icon::before {
   background-image: url("/icons/battery-full-solid-full.svg");
 }
 
+/* food icon */
 .food-icon::before {
   background-image: url("/icons/bowl-food-solid-full.svg");
 }
 
+/* for phone, fire-brigade and mail icon */
 .phone-icon::before,
 .fire-brigade-icon::before,
 .mail-icon::before {
@@ -393,6 +429,7 @@ td {
   height: 1rem;
 }
 
+/* social media icons */
 .facebook-icon,
 .whatsapp-icon,
 .insta-icon,
@@ -402,6 +439,7 @@ td {
   cursor: pointer;
 }
 
+/* links */
 .social-links .links {
   margin-top: 10px;
   margin-bottom: 40px;
@@ -468,8 +506,8 @@ td {
   background-image: url("/images/heatstroke-article.avif");
 }
 
+/* footer section */
 footer {
-  /* border: 2px solid red; */
   background-color: var(--secondary-color);
   color: var(--primary-color);
   padding: 60px;
@@ -483,14 +521,12 @@ footer .footer-container {
 }
 
 footer .footer-links {
-  /* border: 1px solid yellow; */
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 footer .footer-links>div:nth-child(4) h4 {
-  /* border: 1px solid red; */
   margin-bottom: 20px;
 }
 
@@ -500,7 +536,6 @@ footer .footer-links>div:nth-child(4) iframe {
 }
 
 footer .logo-container {
-  /* border: 2px solid orange; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -519,19 +554,13 @@ footer>p {
   margin-top: 20px;
 }
 
-.quick-links {
-  /* border: 2px solid red; */
-}
-
 footer .links-contact {
-  /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
 }
 
 .quick-links .links {
   margin-top: 10px;
-  /* border: 2px solid orange; */
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
@@ -544,7 +573,6 @@ footer .links-contact {
 }
 
 .contact .numbers {
-  /* border: 2px solid red; */
   display: grid;
   grid-template-columns: 16px 1fr;
   gap: 10px;
@@ -558,7 +586,6 @@ footer .links-contact {
 }
 
 footer .feedback {
-  /* border: 1px solid green; */
   padding: 60px;
   display: flex;
   flex-direction: column;
@@ -601,11 +628,8 @@ footer .feedback {
   box-shadow: none;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-  .container {
-    border: 2px solid red;
-  }
 
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
   main .hero {
     gap: 60px;
     padding: 40px 60px;
@@ -621,7 +645,6 @@ footer .feedback {
   }
 
   footer .links-contact {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -629,7 +652,6 @@ footer .feedback {
   }
 
   footer .logo-container {
-    /* border: 2px solid orange; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -718,20 +740,9 @@ footer .feedback {
 
 }
 
-@media screen and (max-width: 599px) {
-  .container {
-    opacity: 1;
-  }
-
+@media screen and (max-width: 599px) and (min-width: 426) {
   .container nav {
     opacity: 0;
-  }
-
-  .container .hamburger-menu {
-    background-color: red;
-    width: 20px;
-    height: 20px;
-    background-image: url("/icons/battery-full-solid-full.svg");
   }
 
   main .hero {
@@ -817,6 +828,154 @@ footer .feedback {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .container {
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  header {
+    padding: 0.6rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  /* logo */
+  header .container img {
+    width: 60px;
+  }
+
+  .container nav {
+    opacity: 0;
+  }
+
+  main .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  main img {
+    width: 200px;
+  }
+
+  main .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  main .hero-letter {
+    font-size: 1.8rem;
+    color: var(--fire);
+  }
+
+  main h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+
+  .hero-content p {
+    font-size: 0.6rem;
+  }
+
+  main .btn,
+  main .btn-secondary {
+    font-size: 0.6rem;
+  }
+
+  main .categories,
+  main .tips,
+  main .hotline-checklist,
+  main .news,
+  main .videos {
+    margin: 30px auto;
+  }
+
+  main .category-grid,
+  main .news-grid,
+  main .video-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tips .tip {
+    margin-top: 1rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, var(--secondary-color), var(--base-color));
+  }
+
+  .hotline-checklist {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .hotline-checklist .emer-hotline,
+  .hotline-checklist .emer-kit {
+    padding: 1rem 0.6rem;
+    gap: 0.6rem;
+  }
+
+  main .video-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .video-card {
+    align-items: center;
+  }
+
+  footer .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer .links-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  footer .logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  footer .feedback {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
+  footer .feedback form {
+    display: flex;
+    align-items: center;
+  }
+
+  footer input,
+  footer textarea {
     width: 80%;
   }
 }
